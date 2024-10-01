@@ -38,7 +38,7 @@ else:
 
 # Evaluate the trained agent
 state, _ = env.reset()  # Extract only the observation from the reset tuple
-for step in range(10000):
+for step in range(1000):
     action, _states = model.predict(state)
     state, reward, terminated, truncated, info = env.step(action)
     env.render()
