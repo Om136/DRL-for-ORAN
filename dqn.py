@@ -45,4 +45,4 @@ for step in range(1000):
     
     # If the episode is finished, reset the environment
     if terminated or truncated:
-        state, _ = env.reset()  # Reset and extract only the observation
+        state, _ = env.reset() 
